@@ -1,0 +1,22 @@
+.scrollable {
+    max-height: 68vh;
+    overflow-y: scroll;
+    padding: 0.5em;
+}
+::-webkit-scrollbar {
+    width: 0.15rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--clr-accent);
+    border-radius: 0.2rem;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-accent-hover);
+  }
+  ::-webkit-scrollbar-button {
+      height: 1.5vh;
+      background-color: transparent;
+  }

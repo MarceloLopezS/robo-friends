@@ -19,5 +19,5 @@
 }
 .card img {
     aspect-ratio: 1;
-    width: clamp(8rem, 12vw, 11rem);
+    width: clamp(7.8rem, 7.5vw, 11rem);
 }

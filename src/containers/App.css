@@ -7,4 +7,6 @@
 
 main {
     display: grid;
+    padding-block: 2rem;
+    padding-inline: min(6vw, 1.5rem);
 }
