@@ -31,19 +31,14 @@ body, input {
 #root {
     min-height: 100vh;
     background: linear-gradient(to right bottom, var(--bg-gradient-1), var(--bg-gradient-2)) no-repeat;
-    display: flex; /* Allows footer to always stay at the bottom with margin-top:auto */
+    display: flex;
     flex-direction: column;
-}
-a {
-    color: var(--clr-accent);
-}
-a:active, a:hover {
-    color: var(--clr-link-active);
 }
 footer {
     width: 100vw;
-    display: grid;
-    justify-items: right;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: right;
     color: var(--clr-neutral--200);
     background: rgba(255, 255, 255, 0.04);
     margin-top: auto;
@@ -53,8 +48,4 @@ footer a {
 }
 footer a:hover, footer a:active {
     color: var(--clr-neutral--300);
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
