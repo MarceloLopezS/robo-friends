@@ -7,6 +7,7 @@
     --clr-neutral--300: #acacac;
     --clr-neutral--200: #c2c2c2;
     --clr-accent: #14A09A;
+    --clr-accent-hover: #128b85;
     --clr-link-active: #128882;
 }
 *, 
@@ -35,10 +36,10 @@ body, input {
     flex-direction: column;
 }
 footer {
-    width: 100vw;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: right;
+    max-width: 100vw;
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
+    display: grid;
+    justify-items: right;
     color: var(--clr-neutral--200);
     background: rgba(255, 255, 255, 0.04);
     margin-top: auto;
@@ -48,4 +49,10 @@ footer a {
 }
 footer a:hover, footer a:active {
     color: var(--clr-neutral--300);
+}
+
+@media (max-width: 510px) {
+    .scrollable {
+        max-height: 66.7vh !important;
+    }
 }
