@@ -31,14 +31,8 @@ body, input {
 #root {
     min-height: 100vh;
     background: linear-gradient(to right bottom, var(--bg-gradient-1), var(--bg-gradient-2)) no-repeat;
-    display: flex; /* Allows footer to always stay at the bottom with margin-top:auto */
+    display: flex;
     flex-direction: column;
-}
-a {
-    color: var(--clr-accent);
-}
-a:active, a:hover {
-    color: var(--clr-link-active);
 }
 footer {
     width: 100vw;
@@ -53,8 +47,4 @@ footer a {
 }
 footer a:hover, footer a:active {
     color: var(--clr-neutral--300);
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
