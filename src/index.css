@@ -1,12 +1,59 @@
+:root {
+    --bg-gradient-1: #017474;
+    --bg-gradient-2: #081943;
+    --bg-primary: #94E6C9;
+    --clr-light: #08100B;
+    --clr-dark: whitesmoke;
+    --clr-neutral--300: #acacac;
+    --clr-neutral--200: #c2c2c2;
+    --clr-accent: #14A09A;
+    --clr-link-active: #128882;
+}
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html, body, #root {
+    margin: 0;
+    padding: 0;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    color: var(--clr-light);
+}
+body, input {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    text-align: center;
 }
-
+#root {
+    min-height: 100vh;
+    background: linear-gradient(to right bottom, var(--bg-gradient-1), var(--bg-gradient-2)) no-repeat;
+    display: flex; /* Allows footer to always stay at the bottom with margin-top:auto */
+    flex-direction: column;
+}
+a {
+    color: var(--clr-accent);
+}
+a:active, a:hover {
+    color: var(--clr-link-active);
+}
+footer {
+    width: 100vw;
+    display: grid;
+    justify-items: right;
+    color: var(--clr-neutral--200);
+    background: rgba(255, 255, 255, 0.04);
+    margin-top: auto;
+}
+footer a {
+    color: var(--clr-neutral--200);
+}
+footer a:hover, footer a:active {
+    color: var(--clr-neutral--300);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

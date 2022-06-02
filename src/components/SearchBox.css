@@ -1,0 +1,9 @@
+.textInput {
+    font-size: 1.08rem;
+    font-weight: 500;
+    padding: 0.3em 0.8em 0.5em 0.8em;
+    border: 0 solid transparent;
+    border-radius: 0.1em;
+    box-shadow: 0 0 0.5rem #242424;
+    outline: none;
+}

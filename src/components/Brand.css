@@ -1,0 +1,10 @@
+.brand {
+    font-family: 'SEGA LOGO FONT', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    color: var(--clr-accent);
+    font-weight: 500;
+    font-size: clamp(2rem, 8.5vw, 3.2rem);
+    margin-block: 2.8rem;
+    user-select: none;
+}

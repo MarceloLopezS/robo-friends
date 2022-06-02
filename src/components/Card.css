@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-primary);
+    font-size: 0.85rem;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: 0 0 0.5rem #242424;
+    transition: transform 0.2s ease-out;
+    user-select: none;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+.card:active {
+    transform: scale(0.98);
+}
+.card img {
+    aspect-ratio: 1;
+    width: clamp(8rem, 12vw, 11rem);
+}
