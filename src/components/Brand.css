@@ -5,6 +5,6 @@
     color: var(--clr-accent);
     font-weight: 500;
     font-size: clamp(2rem, 8.5vw, 3.2rem);
-    margin-block: .85em;
+    margin-block: .88em;
     user-select: none;
 }
