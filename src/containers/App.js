@@ -19,14 +19,27 @@ class App extends Component {
     componentDidMount() {
         fetch('https://dummyjson.com/users')
             .then(response =>  response.json())
-            .then(users => this.setState({robots: users.users.map(user => {
-                return {
-                    id: user.id,
-                    name: 
-                    `${user.firstName} ${user.maidenName} ${user.lastName}`,
-                    email: user.email
-                }
-            })}))
+            .then(users => {
+                const sortedUsers = users.users.sort((a,b) => 
+                    (a.firstName < b.firstName) ? -1 : 
+                    (a.firstName > b.firstName) ? 1 : 0
+                );
+                this.setState({robots: sortedUsers.map(user => {
+                    const { 
+                        id, 
+                        firstName, 
+                        maidenName, 
+                        lastName, 
+                        email 
+                    } = user;
+                    return {
+                        id: id,
+                        name: 
+                        `${firstName} ${maidenName} ${lastName}`,
+                        email: email
+                    }
+                })})
+            })
     }
 
     onSearchChange = (inputEvent) => {
