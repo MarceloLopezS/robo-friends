@@ -30,12 +30,16 @@ class App extends Component {
                         firstName, 
                         maidenName, 
                         lastName, 
+                        gender,
+                        age,
                         email 
                     } = user;
                     return {
                         id: id,
                         name: 
                         `${firstName} ${maidenName} ${lastName}`,
+                        age: age,
+                        gender: gender,
                         email: email
                     }
                 })})
@@ -61,7 +65,6 @@ class App extends Component {
                     <Brand />
                     <SearchBox 
                         searchChange={this.onSearchChange}
-                        searchField={searchField}
                     />
                 </header>
                 <main>

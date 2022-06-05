@@ -7,12 +7,21 @@ const CardGrid = ({ robots }) => {
         <div className='cardGrid'>
             {
                 robots.map((robot) => {
+                    const {
+                        id,
+                        name,
+                        age,
+                        gender,
+                        email
+                    } = robot;
                     return (
                         <Card 
-                            key={robot.id} 
-                            id={robot.id} 
-                            name={robot.name} 
-                            email={robot.email}                       
+                            key={id} 
+                            id={id} 
+                            name={name} 
+                            age={age}
+                            gender={gender}
+                            email={email}
                         />
                     )
                 })

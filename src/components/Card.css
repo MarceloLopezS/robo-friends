@@ -6,7 +6,7 @@
     background-color: var(--bg-primary);
     font-size: 0.85rem;
     border-radius: 0.5em;
-    padding: 1em;
+    padding: 1.2em;
     box-shadow: 0 0 0.5rem #242424;
     transition: transform 0.2s ease-out;
     user-select: none;
@@ -19,5 +19,11 @@
 }
 .card img {
     aspect-ratio: 1;
-    width: clamp(7.8rem, 7.5vw, 11rem);
+    width: clamp(8rem, 8.3vw, 11rem);
+}
+.card h2 {
+    font-size: 1.45em;
+}
+.card p {
+    margin-block: .15em;
 }
