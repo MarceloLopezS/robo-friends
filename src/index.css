@@ -2,8 +2,7 @@
     --bg-gradient-1: #017474;
     --bg-gradient-2: #081943;
     --bg-primary: #94E6C9;
-    --clr-light: #08100B;
-    --clr-dark: whitesmoke;
+    --clr-light: #3d3d3d;
     --clr-neutral--300: #acacac;
     --clr-neutral--200: #c2c2c2;
     --clr-accent: #14A09A;
@@ -49,10 +48,4 @@ footer a {
 }
 footer a:hover, footer a:active {
     color: var(--clr-neutral--300);
-}
-
-@media (max-width: 510px) {
-    .scrollable {
-        max-height: 66.7vh !important;
-    }
 }
