@@ -31,8 +31,7 @@ body, input {
 #root {
     min-height: 100vh;
     background: linear-gradient(to right bottom, var(--bg-gradient-1), var(--bg-gradient-2)) no-repeat;
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 footer {
     max-width: 100vw;
