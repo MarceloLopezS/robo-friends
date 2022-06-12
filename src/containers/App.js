@@ -17,33 +17,35 @@ class App extends Component {
     }
     
     componentDidMount() {
-        fetch('https://dummyjson.com/users')
-            .then(response =>  response.json())
-            .then(users => {
-                const sortedUsers = users.users.sort((a,b) => 
-                    (a.firstName < b.firstName) ? -1 : 
-                    (a.firstName > b.firstName) ? 1 : 0
-                );
-                this.setState({robots: sortedUsers.map(user => {
-                    const { 
-                        id, 
-                        firstName, 
-                        maidenName, 
-                        lastName, 
-                        gender,
-                        age,
-                        email 
-                    } = user;
-                    return {
-                        id: id,
-                        name: 
-                        `${firstName} ${maidenName} ${lastName}`,
-                        age: age,
-                        gender: gender,
-                        email: email
-                    }
-                })})
-            })
+        const fetchUsers = async () => {
+            const response = await fetch('https://dummyjson.com/users');
+            const result = await response.json();
+            const sortedUsers = result.users.sort((a,b) => 
+                (a.firstName < b.firstName) ? -1 : 
+                (a.firstName > b.firstName) ? 1 : 0
+            );
+            this.setState({robots: sortedUsers.map(user => {
+                const { 
+                    id, 
+                    firstName, 
+                    maidenName, 
+                    lastName, 
+                    gender,
+                    age,
+                    email 
+                } = user;
+                return {
+                    id: id,
+                    name: 
+                    `${firstName} ${maidenName} ${lastName}`,
+                    age: age,
+                    gender: gender,
+                    email: email
+                }
+            })})
+        }
+
+        fetchUsers()
     }
 
     onSearchChange = (inputEvent) => {
