@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Brand from '../components/Brand';
-import SearchBox from '../components/SearchBox';
-import Scrollable from '../components/Scrollable';
-import Loader from '../components/Loader';
-import CardGrid from '../components/CardGrid';
-import ContactInfo from '../components/ContactInfo';
+import Brand from '../components/brand/Brand';
+import SearchBox from '../components/searchbox/SearchBox';
+import Scrollable from '../components/scrollable/Scrollable';
+import Loader from '../components/loader/Loader';
+import CardGrid from '../components/cardGrid/CardGrid';
+import ContactInfo from '../components/contactInfo/ContactInfo';
 
 class App extends Component {
     constructor() {
