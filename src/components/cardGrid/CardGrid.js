@@ -4,7 +4,7 @@ import Card from '../card/Card';
 
 const CardGrid = ({ robots }) => {
     return (
-        <div className='cardGrid'>
+        <div className='card-grid'>
             {
                 robots.map((robot) => {
                     const {
