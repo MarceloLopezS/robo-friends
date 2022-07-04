@@ -4,7 +4,7 @@ import './SearchBox.css';
 const SearchBox = ({ searchChange }) => {
     return (
         <input 
-            className='textInput' 
+            className='text-input' 
             type='search' 
             placeholder='Robo search' 
             onInput={searchChange}

@@ -53,9 +53,3 @@ footer {
     background: rgba(255, 255, 255, 0.04);
     margin-top: auto;
 }
-footer a {
-    color: var(--clr-neutral-200);
-}
-footer a:hover, footer a:active {
-    color: var(--clr-neutral-300);
-}
