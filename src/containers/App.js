@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Brand from '../components/brand/Brand';
 import SearchBox from '../components/searchbox/SearchBox';
 import Scrollable from '../components/scrollable/Scrollable';

@@ -17,13 +17,13 @@
 .card:active {
     transform: scale(0.98);
 }
-.card img {
+.card__img {
     aspect-ratio: 1;
     width: clamp(8rem, 8.3vw, 11rem);
 }
-.card h2 {
+.card__title {
     font-size: 1.45em;
 }
-.card p {
+.card__text {
     margin-block: .15em;
 }
